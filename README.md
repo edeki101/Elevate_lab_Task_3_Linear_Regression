@@ -1,41 +1,34 @@
 # Elevate_lab_Task_3_Linear_Regression# Task 3: Linear Regression - AI & ML Internship
+# Task 3: Linear Regression - AI & ML Internship
 
-## 📋 Project Overview
-This repository contains the implementation of **Simple and Multiple Linear Regression** using the Housing dataset as part of the AI & ML Internship tasks. The primary objective is to explore real estate data, preprocess features, train a linear regression model using `scikit-learn`, evaluate performance using standard error metrics, and interpret feature coefficients.
+Project Overview
+This repository contains the implementation of Simple and Multiple Linear Regression using the Housing dataset as part of the AI & ML Internship tasks. The primary objective is to explore real estate data, preprocess features, train a linear regression model using `scikit-learn`, evaluate performance using standard error metrics, and interpret feature coefficients.
+Complete Workflow Followed
+1. Dataset Import & Selection:Loaded the Housing dataset (`Housing.csv`) containing various property attributes and prices.
+2. Data Inspection: Examined the dataset structure, data types, non-null counts, and summary statistics using Pandas (`.info()`, `.describe()`, `.head()`).
+3. Exploratory Data Analysis (EDA): Visualized feature distributions and correlation matrices via heatmaps to identify key price drivers and check for multicollinearity.
+4. Data Preprocessing: Handled categorical variables by mapping binary columns (`yes`/`no` to `1`/`0`) and applying One-Hot Encoding to multi-class features (e.g., `furnishing status`).
+5. Data Splitting: Split the cleaned dataset into an 80% training set and a 20% testing set.
+6. Model Training:  Fitted a Multiple Linear Regression model using `sklearn.linear_model
+7. Model Evaluation: Evaluated model predictions on the test set using standard regression metrics:
+   Mean Absolute Error (MAE)
+   Mean Squared Error (MSE)
+   $R^2$ Score (Coefficient of Determination)
+8. Visualization & Interpretation: Plotted actual vs. predicted house values and analyzed the magnitude and direction of feature coefficients.
 
----
+ Results & Performance Metrics
+R^2 Score: `[Insert your R^2 score here, e.g., 0.65]`
+Mean Absolute Error (MAE): [Insert your MAE value here]`
+Mean Squared Error (MSE):`[Insert your MSE value here]`
 
-## 🛠️ Complete Workflow Followed
-1. **Dataset Import & Selection:** Loaded the Housing dataset (`Housing.csv`) containing various property attributes and prices.
-2. **Data Inspection:** Examined the dataset structure, data types, non-null counts, and summary statistics using Pandas (`.info()`, `.describe()`, `.head()`)[cite: 3].
-3. **Exploratory Data Analysis (EDA):** Visualized feature distributions and correlation matrices via heatmaps to identify key price drivers and check for multicollinearity.
-4. **Data Preprocessing:** Handled categorical variables by mapping binary columns (`yes`/`no` to `1`/`0`) and applying One-Hot Encoding to multi-class features (e.g., `furnishingstatus`).
-5. **Data Splitting:** Split the cleaned dataset into an **80% training set** and a **20% testing set**[cite: 1].
-6. **Model Training:** Fitted a **Multiple Linear Regression** model using `sklearn.linear_model`[cite: 1].
-7. **Model Evaluation:** Evaluated model predictions on the test set using standard regression metrics:
-   - **Mean Absolute Error (MAE)**[cite: 1]
-   - **Mean Squared Error (MSE)**[cite: 1]
-   - **$R^2$ Score (Coefficient of Determination)**[cite: 1]
-8. **Visualization & Interpretation:** Plotted actual vs. predicted house values and analyzed the magnitude and direction of feature coefficients[cite: 1].
-
----
-
-## 📊 Results & Performance Metrics
-* **$R^2$ Score:** `[Insert your R^2 score here, e.g., 0.65]`
-* **Mean Absolute Error (MAE):** `[Insert your MAE value here]`
-* **Mean Squared Error (MSE):** `[Insert your MSE value here]`
-
-*(Tip: You can add a screenshot of your Actual vs. Predicted scatter plot in your repo and link it here!)*
+(Tip: You can add a screenshot of your Actual vs. Predicted scatter plot in your repo and link it here!)
 
 ---
 
-## ⚙️ Prerequisites & Dependencies
+Prerequisites & Dependencies
 To run this project locally, ensure you have Python installed along with the required libraries:
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
-### 4. download
-![download](download.png)
-
 
 
 Interview Questions & Answers
@@ -63,6 +56,8 @@ Interview Questions & Answers
 •	Standard linear regression outputs continuous numeric values, making it unsuited for discrete class labels. However, its modified form—Logistic Regression—applies the sigmoid function to map continuous values into probabilities between 0 and 1, making it a standard tool for binary classification.
 8. What happens if you violate regression assumptions?
 •	Violating regression assumptions compromises the reliability of your model. It can lead to biased coefficient estimates, inaccurate standard errors, misleading p-values (invalidating hypothesis tests and confidence intervals), and severely degraded predictive accuracy on unseen data.
+
+
  
 --- Model Coefficients Interpretation ---
                         Feature   Coefficient
