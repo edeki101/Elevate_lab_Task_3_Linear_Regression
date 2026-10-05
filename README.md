@@ -33,6 +33,9 @@ This repository contains the implementation of **Simple and Multiple Linear Regr
 To run this project locally, ensure you have Python installed along with the required libraries:
 ```bash
 pip install pandas numpy matplotlib seaborn scikit-learn
+### 4. download
+![download](download.png)
+
 
 
 Interview Questions & Answers
