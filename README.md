@@ -60,5 +60,24 @@ Interview Questions & Answers
 •	Standard linear regression outputs continuous numeric values, making it unsuited for discrete class labels. However, its modified form—Logistic Regression—applies the sigmoid function to map continuous values into probabilities between 0 and 1, making it a standard tool for binary classification.
 8. What happens if you violate regression assumptions?
 •	Violating regression assumptions compromises the reliability of your model. It can lead to biased coefficient estimates, inaccurate standard errors, misleading p-values (invalidating hypothesis tests and confidence intervals), and severely degraded predictive accuracy on unseen data.
+ 
+--- Model Coefficients Interpretation ---
+                        Feature   Coefficient
+                      bathrooms  1.094445e+06
+                airconditioning  7.914267e+05
+                hotwaterheating  6.846499e+05
+                       prefarea  6.298906e+05
+   furnishingstatus_unfurnished -4.136451e+05
+                        stories  4.074766e+05
+                       basement  3.902512e+05
+                       mainroad  3.679199e+05
+                      guestroom  2.316100e+05
+                        parking  2.248419e+05
+furnishingstatus_semi-furnished -1.268818e+05
+                       bedrooms  7.677870e+04
+                           area  2.359688e+02
+
+Intercept (eta_0$): 260032.36
+
 
 
